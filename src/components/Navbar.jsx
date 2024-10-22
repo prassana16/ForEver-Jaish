@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import logo from '../assets/image/jrnav.jpeg'
 function Navbar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,10 +15,10 @@ function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <nav className='flex bg-[#865439] py-2 px-4 items-center justify-between '>
+      <nav className='flex bg-[#865439] py-2 px-4 items-center justify-between  '>
         {/* Title */}
         <div className="flex gap-3 items-center">
-          <img src="" alt="PJ" className="w-10 h-10 rounded-full" />
+          <img src={logo} alt="PJ" className="w-12 h-12 rounded-full " />
           <h1 className='text-2xl font-thin font-sans text-[#F3D5C0] hover:text-[#BBF1FA] cursor-pointer'>
             ForEver<span className='font-normal'>Jaish</span>
           </h1>

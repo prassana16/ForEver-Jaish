@@ -6,7 +6,18 @@ export default {
     
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'gradient-move': 'gradientMove 2s ease infinite',
+      },
+      keyframes: {
+        gradientMove: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+
+        },
+      },
+    },
   },
   plugins: [
     
