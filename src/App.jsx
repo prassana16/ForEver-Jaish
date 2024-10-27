@@ -12,6 +12,7 @@ function App() {
     <Navbar />
     <Banner />
     <HowStarted />
+    <Banner />
     </div>
   )
 }

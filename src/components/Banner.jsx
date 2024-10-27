@@ -50,13 +50,13 @@ const Banner = () => {
   }, []);
 
   const scrollVariants = {
-    up: { y: [-150, 0], transition: { duration: 150, ease: 'linear', repeat: Infinity } },
-    down: { y: [0, -150], transition: { duration: 150, ease: 'linear', repeat: Infinity } },
+    up: { y: [-200, 0], transition: { duration: 200, ease: 'linear', repeat: Infinity } },
+    down: { y: [0, -200], transition: { duration: 200, ease: 'linear', repeat: Infinity } },
   };
 
   return (
     
-    <div className="relative w-full h-[200px] sm:h-[300px] md:h-[500px] bg-[#865439] flex items-center justify-center overflow-hidden">
+    <div className=" relative w-full h-[200px] sm:h-[300px] md:h-[100vh] bg-[#865439] flex items-center justify-center overflow-hidden">
       {/* Image carousel behind the text */}
       <div className="absolute inset-0 grid grid-cols-4 sm:grid-cols-3 md:grid-cols-7 gap-0 z-0">
         {/* Column 1 */}
@@ -66,11 +66,11 @@ const Banner = () => {
             variants={scrollVariants}
             animate="down"
           >
-            <img src={image1} alt="Scrolling image 1" className="w-full h-full object-cover" />
+            <img src={image10} alt="Scrolling image 1" className="w-full h-full object-cover" />
             <img src={image11} alt="Scrolling image 2" className="w-full h-full object-cover" />
             <img src={image13} alt="Scrolling image 3" className="w-full h-full object-cover" />
-            <img src={image2} alt="Scrolling image 4" className="w-full h-full object-cover" />
-            <img src={image14} alt="Scrolling image 5" className="w-full h-full object-cover" />
+            <img src={image12} alt="Scrolling image 4" className="w-full h-full object-cover" />
+            <img src={image2} alt="Scrolling image 5" className="w-full h-full object-cover" />
           </motion.div>
         </div>
 
@@ -81,11 +81,11 @@ const Banner = () => {
             variants={scrollVariants}
             animate="up"
           >
-            <img src={image5} alt="Scrolling image 1" className="w-full h-full object-cover" />
-            <img src={image6} alt="Scrolling image 2" className="w-full h-full object-cover" />
-            <img src={image7} alt="Scrolling image 3" className="w-full h-full object-cover" />
-            <img src={image12} alt="Scrolling image 4" className="w-full h-full object-cover" />
-            <img src={image10} alt="Scrolling image 5" className="w-full h-full object-cover" />
+            <img src={image7} alt="Scrolling image 1" className="w-full h-full object-cover" />
+            <img src={image15} alt="Scrolling image 2" className="w-full h-full object-cover" />
+            <img src={image14} alt="Scrolling image 3" className="w-full h-full object-cover" />
+            <img src={image14} alt="Scrolling image 4" className="w-full h-full object-cover" />
+            <img src={image3} alt="Scrolling image 5" className="w-full h-full object-cover" />
           </motion.div>
         </div>
 
@@ -96,8 +96,8 @@ const Banner = () => {
             variants={scrollVariants}
             animate="down"
           >
-            <img src={image8} alt="Scrolling image 1" className="w-full h-full object-cover" />
-            <img src={image} alt="Scrolling image 2" className="w-full h-full object-cover" />
+            <img src={image12} alt="Scrolling image 1" className="w-full h-full object-cover" />
+            <img src={image8} alt="Scrolling image 2" className="w-full h-full object-cover" />
             <img src={image15} alt="Scrolling image 3" className="w-full h-full object-cover" />
             <img src={image18} alt="Scrolling image 4" className="w-full h-full object-cover" />
             <img src={image1} alt="Scrolling image 5" className="w-full h-full object-cover" />
@@ -111,11 +111,11 @@ const Banner = () => {
             variants={scrollVariants}
             animate="up"
           >
-            <img src={image3} alt="Scrolling image 1" className="w-full h-full object-cover" />
-            <img src={image4} alt="Scrolling image 2" className="w-full h-full object-cover" />
-            <img src={image9} alt="Scrolling image 3" className="w-full h-full object-cover" />
-            <img src={image1} alt="Scrolling image 4" className="w-full h-full object-cover" />
-            <img src={image17} alt="Scrolling image 5" className="w-full h-full object-cover" />
+            <img src={image13} alt="Scrolling image 1" className="w-full h-full object-cover" />
+            <img src={image6} alt="Scrolling image 2" className="w-full h-full object-cover" />
+            <img src={image5} alt="Scrolling image 3" className="w-full h-full object-cover" />
+            <img src={image17} alt="Scrolling image 4" className="w-full h-full object-cover" />
+            <img src={image7} alt="Scrolling image 5" className="w-full h-full object-cover" />
           </motion.div>
         </div>
 
@@ -129,10 +129,10 @@ const Banner = () => {
                 variants={scrollVariants}
                 animate="down"
               >
-                <img src={image4} alt="Scrolling image 1" className="w-full h-full object-cover" />
-                <img src={image} alt="Scrolling image 2" className="w-full h-full object-cover" />
-                <img src={image1} alt="Scrolling image 3" className="w-full h-full object-cover" />
-                <img src={image2} alt="Scrolling image 4" className="w-full h-full object-cover" />
+                <img src={image14} alt="Scrolling image 1" className="w-full h-full object-cover" />
+                <img src={image9} alt="Scrolling image 2" className="w-full h-full object-cover" />
+                <img src={image10} alt="Scrolling image 3" className="w-full h-full object-cover" />
+                <img src={image5} alt="Scrolling image 4" className="w-full h-full object-cover" />
                 <img src={image3} alt="Scrolling image 5" className="w-full h-full object-cover" />
               </motion.div>
             </div>
@@ -144,10 +144,10 @@ const Banner = () => {
                 variants={scrollVariants}
                 animate="up"
               >
-                <img src={image} alt="Scrolling image 1" className="w-full h-full object-cover" />
-                <img src={image1} alt="Scrolling image 2" className="w-full h-full object-cover" />
-                <img src={image2} alt="Scrolling image 3" className="w-full h-full object-cover" />
-                <img src={image3} alt="Scrolling image 4" className="w-full h-full object-cover" />
+                <img src={image17} alt="Scrolling image 1" className="w-full h-full object-cover" />
+                <img src={image11} alt="Scrolling image 2" className="w-full h-full object-cover" />
+                <img src={image12} alt="Scrolling image 3" className="w-full h-full object-cover" />
+                <img src={image13} alt="Scrolling image 4" className="w-full h-full object-cover" />
                 <img src={image4} alt="Scrolling image 5" className="w-full h-full object-cover" />
               </motion.div>
             </div>
@@ -159,10 +159,10 @@ const Banner = () => {
                 variants={scrollVariants}
                 animate="down"
               >
-                <img src={image1} alt="Scrolling image 1" className="w-full h-full object-cover" />
-                <img src={image2} alt="Scrolling image 2" className="w-full h-full object-cover" />
-                <img src={image3} alt="Scrolling image 3" className="w-full h-full object-cover" />
-                <img src={image4} alt="Scrolling image 4" className="w-full h-full object-cover" />
+                <img src={image9} alt="Scrolling image 1" className="w-full h-full object-cover" />
+                <img src={image14} alt="Scrolling image 2" className="w-full h-full object-cover" />
+                <img src={image15} alt="Scrolling image 3" className="w-full h-full object-cover" />
+                <img src={image18} alt="Scrolling image 4" className="w-full h-full object-cover" />
                 <img src={image} alt="Scrolling image 5" className="w-full h-full object-cover" />
               </motion.div>
             </div>
@@ -171,7 +171,7 @@ const Banner = () => {
       </div>
 
       {/* Overlay with quote */}
-      <div className="relative z-10 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+      <div className=" relative z-10 w-full h-full flex items-center justify-center bg-[#000000] bg-opacity-80">
   <h1 className="text-transparent  text-center font-bold px-4 py-2 rounded-md text-sm sm:text-3xl md:text-5xl crazy-text">
     "Love is not finding someone to live with, it's finding someone you can't live without."
   </h1>
