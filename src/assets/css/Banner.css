@@ -39,3 +39,130 @@
     background-attachment: fixed;
     
   }
+  @media (max-width: 700px){
+    .journeybg{
+      background-image: url(../image/journeybg2.png);
+      background-repeat: no-repeat;
+      background-size: 450px 940px;
+    background-attachment: fixed;
+    }
+
+  }
+
+
+  .our-story-section {
+    background-color: #FFF5F7;
+  }
+  
+  .timeline {
+    position: relative;
+  }
+  
+  .timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-item.left .date,
+  .timeline-item.right .date {
+    align-self: flex-start;
+  }
+  
+  .timeline-item.left .content,
+  .timeline-item.right .content {
+    align-self: flex-end;
+  }
+  
+  .timeline-item .date {
+    font-weight: bold;
+  }
+  
+  .timeline-item .content {
+    position: relative;
+    max-width: 500px;
+    border: 1px solid #ffd6e0;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-item img {
+    max-height: 250px;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #e63946;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item.left,
+  .timeline-item.right {
+    padding: 1.5rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    .timeline-item {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  
+    .timeline-item.left {
+      flex-direction: row-reverse;
+    }
+  
+    .timeline-item.left .date,
+    .timeline-item.right .date {
+      align-self: center;
+    }
+  
+    .timeline-item.left .content,
+    .timeline-item.right .content {
+      align-self: flex-start;
+    }
+  }
+
+  
+  .photo-gallery {
+    background-color: #FFF5F7;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+
+  
+  .bucket-list-section {
+    background-color: #f0f9ff;
+  }
+  
+  .bucket-list-items li {
+    transition: all 0.3s ease;
+  }
+  
+  .bucket-list-items li:hover {
+    transform: scale(1.02);
+  }
+  
